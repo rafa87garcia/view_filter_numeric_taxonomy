@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains view_filter_numeric_taxonomy.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function view_filter_numeric_taxonomy_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the view_filter_numeric_taxonomy module.
+    case 'help.page.view_filter_numeric_taxonomy':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My Awesome Module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
